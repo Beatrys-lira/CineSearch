@@ -2,7 +2,7 @@ CineSearch – Buscador de Filmes e Séries
 
 Sobre o projeto
 
-O CineSearch é uma aplicação web que está desenvolvimento em HTML, CSS e JS que permite pesquisar filmes e séries de forma rápida utilizando a API OMDb.
+O CineSearch é uma aplicação web que está em desenvolvimento em HTML, CSS e JS que permite pesquisar filmes e séries de forma rápida utilizando a API OMDb.
 
 A aplicação exibe informações básicas como título, imagem, nota, gênero, ano e sinopse em um formato de cards.
 
