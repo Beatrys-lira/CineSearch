@@ -1,0 +1,206 @@
+:root {
+  --preto: #000000;
+  --preto-acinzentado: #1A1A1A;
+  --cinza: #2B2B2B;
+
+  --roxo: #8B5CF6;
+  --roxo-claro: #A855F7;
+  --lilas: #C084FC;
+
+  --branco: #F5F5F5;
+  --cinza-claro: #B3B3B3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--branco);
+  background:
+    linear-gradient(
+      to right,
+      rgba(0,0,0,1) 10%,
+      rgba(0,0,0,.9) 35%,
+      rgba(0,0,0,.6) 60%,
+      rgba(0,0,0,.2) 100%
+    ),
+    url("../assets/img/fundo-movie.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* HEADER */
+header {
+  background-color: var(--preto);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 90px;
+  height: 70px;
+}
+
+/* MENU DE OPÇÕES DO HEADER */
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu a {
+  color: var(--branco);
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: var(--roxo);
+}
+
+/* INPUT HEADER */
+.input input {
+  width: 190px;
+  border-radius: 25px;
+  border: none;
+  background-color: var(--preto-acinzentado);
+  color: var(--cinza-claro);
+  padding: 10px 10px 10px 40px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 18px;
+}
+
+.input input::placeholder {
+  color: var(--cinza-claro);
+}
+
+.input input:hover {
+  outline: none;
+  box-shadow: 0 0 5px var(--roxo);
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+.main {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+}
+
+.conteudo h1 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.conteudo span {
+  color: var(--roxo);
+}
+
+.conteudo2 p {
+  color: var(--cinza-claro);
+}
+
+/* INPUT PRINCIPAL */
+#filme {
+  width: 380px;
+  border-radius: 15px;
+  border: none;
+  background-color: var(--preto-acinzentado);
+  color: var(--cinza-claro);
+  padding: 12px 15px 12px 45px;
+  font-size: 14px;
+  background-repeat: no-repeat;
+  background-position: 12px center;
+  background-size: 20px;
+  outline: none;
+}
+
+#filme::placeholder {
+  color: var(--cinza-claro);
+}
+
+#filme:focus {
+  color: var(--branco);
+}
+
+/* BOTÕES EM GERAL*/
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#btnHeader,
+#btnMain {
+  background-color: var(--roxo);
+  color: var(--branco);
+  border-radius: 25px;
+  width: 80px;
+  height: 30px;
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.2s;
+}
+
+#btnHeader:hover,
+#btnMain:hover {
+  transform: scale(1.1);
+  color: var(--preto-acinzentado);
+}
+
+/* SEÇÃO DOS FILMES EM ALTA */
+#alta {
+  margin: 30px;
+}
+
+/* CARDS PROS DETALHES */
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  scroll-behavior: smooth;
+}
+
+.card::-webkit-scrollbar {
+  display: none;
+}
+
+.movie-card {
+  width: 160px;
+  transition: 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.movie-card h3 {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* FAVORITO */
+#favorito {
+  border: none;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineSearch</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="./assets/img/logo.png" alt="Logo do CineSearch">
+        </div>
+
+        <nav class="menu">
+            <a href="./index.html">Inicio</a>
+            <a href="./pages/favoritos.html">Favoritos</a>
+            <a href="./pages/resumo.html">Filmes</a>
+        </nav>
+
+        <div class="input">
+            <input id="searchHeader" type="text" placeholder="Pesquisar..." />
+            <button id="btnHeader">Buscar</button>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="conteudo">
+            <h1>ENCONTRE FILMES INCRÍVEIS NO <span>CINESEARCH </span></h1>
+        </div>
+
+        <div class="conteudo2">
+            <p>Busque e descubra conteúdos que você vai adorar!</p>
+        </div>
+
+        <div class="search-box">
+            <input id="filme" type="text" placeholder="Pesquisar por filmes ou séries..." />
+            <button id="btnMain">Buscar</button>
+        </div>
+    </section>
+    <section id="alta">
+     
+       <h3>EM ALTA ></h3>
+           <div id="moviesContainer" class="card"></div>
+    </section>
+
+    <script src="./js/api.js"></script>
+    
+
+</body>
+</html>
