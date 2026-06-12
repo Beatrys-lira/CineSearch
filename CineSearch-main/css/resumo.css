@@ -1,0 +1,152 @@
+
+html,body{height:100%;}
+body{
+	margin:0;
+	/* manter o background global de `style.css` e herdar cor */
+	font-family: 'Poppins', sans-serif;
+	color:inherit;
+}
+
+.catalogos{
+	max-width:1200px;
+	margin:28px auto;
+	padding:16px;
+}
+
+.catalogo{margin-bottom:34px;}
+.catalogo h2{
+	margin:0 0 12px 2px;
+	font-size:20px;
+	font-weight:600;
+	color:var(--branco);
+}
+
+.movies-list{
+	display:grid;
+	grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+	gap:18px;
+}
+
+.movie-card{
+	background: linear-gradient(180deg, rgba(26,26,26,0.98), rgba(43,43,43,0.95));
+	border-radius:10px;
+	overflow:hidden;
+	box-shadow:0 6px 18px rgba(0,0,0,0.6);
+	display:flex;
+	flex-direction:column;
+	transition:transform .18s ease, box-shadow .18s ease;
+	border: 1px solid rgba(255,255,255,0.03);
+}
+.movie-card:hover{
+	transform:translateY(-6px);
+	box-shadow:0 18px 36px rgba(0,0,0,0.7);
+}
+
+.movie-card img{
+	width:100%;
+	height:240px;
+	object-fit:cover;
+	display:block;
+}
+
+.movie-card .info{
+	padding:10px 12px 14px 12px;
+	display:flex;
+	flex-direction:column;
+	gap:8px;
+	flex:1 1 auto;
+}
+
+.movie-card h3{
+	font-size:14px;
+	margin:0;
+	line-height:1.2;
+	height:36px;
+	overflow:hidden;
+	color:var(--branco);
+}
+
+.movie-card .meta{
+	font-size:12px;
+	color:var(--cinza-claro);
+}
+
+.botoes-container{
+	padding:0 12px 12px 12px;
+}
+
+.btn-detalhes{
+	width:100%;
+	background:linear-gradient(180deg,var(--roxo),var(--roxo-claro));
+	color:#fff;
+	border:none;
+	padding:9px 10px;
+	border-radius:8px;
+	cursor:pointer;
+	font-weight:600;
+	font-size:13px;
+	display:inline-flex;
+	align-items:center;
+	justify-content:center;
+	gap:8px;
+}
+.btn-detalhes:active{transform:translateY(1px)}
+.btn-detalhes p{margin:0}
+
+
+@media (max-width:900px){
+	.movie-card img{height:200px}
+}
+@media (max-width:520px){
+	.movie-card img{height:180px}
+	.movies-list{gap:12px}
+}
+
+
+
+/* FOOTER */
+
+.footer {
+  background-color: var(--preto);
+
+  margin-top: 50px;
+  padding: 30px 20px;
+
+  text-align: center;
+
+  border-top: 1px solid rgba(139, 92, 246, .3);
+}
+
+.footer-conteudo {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer h3 {
+  color: var(--roxo);
+  margin-bottom: 10px;
+}
+
+.footer h4 {
+  color: var(--lilas);
+  margin: 20px 0 10px;
+}
+
+.footer p,
+.footer li {
+  color: var(--cinza-claro);
+}
+
+.integrantes ul {
+  list-style: none;
+}
+
+.integrantes li {
+  margin: 6px 0;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: .8;
+}
